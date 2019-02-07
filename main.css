@@ -6,7 +6,7 @@
 /* Container of all 12 grid boxes */
 #container {
   display: grid;
-  grid-template-columns: 320px 320px 320px; 
+  grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: auto;
 }
 
@@ -25,7 +25,7 @@ h3 {
 @media only screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait) 
 {
   #container { 
-    grid-template-columns:320px;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
   } 
 } 
@@ -34,7 +34,7 @@ h3 {
 @media only screen and (min-width: 600px) and (max-width: 900px) and (orientation: portrait)
 {
   #container {
-    grid-template-columns: 320px 320px; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
 } 
 } 
@@ -43,7 +43,7 @@ h3 {
 @media only screen and (min-width: 1000px) and (orientation: landscape) 
   {
     #container {
-      grid-template-columns: 320px 320px 320px; 
+      grid-template-columns: 1fr 1fr 1fr; 
       grid-template-rows: auto;
   } 
   }  
