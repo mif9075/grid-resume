@@ -34,11 +34,6 @@ h3 {
     flex-direction: column;
   }
   
-  .history {
-    display: grid;
-    flex-direction: column;
-  }
-  
 } 
 
 
@@ -54,11 +49,6 @@ h3 {
 
 @media only screen and (min-width: 700px) and (orientation: landscape) 
 {
-  .history {
-    display: grid;
-    flex-direction: row;
-  }
-  
   footer {
     display: grid;
     flex-direction: row;
