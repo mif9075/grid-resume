@@ -6,15 +6,15 @@
 /* Container of all 12 grid boxes */
 #container {
   display: grid;
-  grid-template-columns: repeat (3, 320px); 
+  grid-template-columns: 320px 320px 320px; 
   grid-template-rows: auto;
 }
 
 /* Black Background on selected flex boxes */
-.square1 {
+/* .square1 {
   background-color: black;
   color: white;
-}
+} */
 
 h3 {
   text-align: center;
@@ -22,30 +22,29 @@ h3 {
 
 /* Media Layouts */
 
-@media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) 
+@media only screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait) 
 {
   #container { 
-    display: grid; 
-    
-  }
-  
+    grid-template-columns:320px;
+    grid-template-rows: auto;
+  } 
 } 
 
 
-@media only screen and (min-width: 400px) and (max-width: 700px) and (orientation: portrait)
+@media only screen and (min-width: 600px) and (max-width: 900px) and (orientation: portrait)
 {
   #container {
-    display: grid;
-    
+    grid-template-columns: 320px 320px; 
+    grid-template-rows: auto;
 } 
-}  
+} 
  
 
-@media only screen and (min-width: 700px) and (orientation: landscape) 
+@media only screen and (min-width: 1000px) and (orientation: landscape) 
   {
     #container {
-      display: grid;
-      
+      grid-template-columns: 320px 320px 320px; 
+      grid-template-rows: auto;
   } 
   }  
 
