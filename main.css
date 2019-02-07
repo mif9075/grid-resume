@@ -1,22 +1,19 @@
+/* 12 flex boxes 3x4*/
+.square {
+  border: 1px solid black;
+}
+
+/* Container of all 12 grid boxes */
+#container {
+  display: grid;
+  width: 1000px;
+  height: auto;
+}
+
 /* Black Background on selected flex boxes */
 .square1 {
   background-color: black;
   color: white;
-}
-
-/* 12 flex boxes 3x4*/
-.square {
-  padding: 0px;
-  width: 320px;
-  height: 160px;
-  border: 1px solid;
-}
-
-/* Container of all 12 flex boxes */
-#container {
-  display: grid;
-  width: 100px;
-  height: auto;
 }
 
 h3 {
@@ -39,17 +36,22 @@ h3 {
 {
   #container {
     display: grid;
+    
 } 
 }  
  
 
 @media only screen and (min-width: 700px) and (orientation: landscape) 
-{
-  footer {
-    display: grid;
-    flex-direction: row;
-  }
-}
+  {
+    #container {
+      display: grid;
+      
+  } 
+  }  
+
+
+
+
 
 
 
