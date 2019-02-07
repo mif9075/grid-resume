@@ -1,0 +1,70 @@
+/* Black Background on selected flex boxes */
+.square1 {
+  background-color: black;
+  color: white;
+}
+
+/* 12 flex boxes 3x4*/
+.square {
+  padding: 0px;
+  width: 320px;
+  height: 160px;
+  border: 1px solid;
+
+  
+}
+
+/* Container of all 12 flex boxes */
+#container {
+  display: flex;
+  width: 100px;
+  height: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Media Layouts */
+
+@media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) 
+{
+  #container { 
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  .history {
+    display: flex;
+    flex-direction: column;
+  }
+  
+} 
+
+
+@media only screen and (min-width: 400px) and (max-width: 700px) and (orientation: portrait)
+{
+
+#container {
+  display: flex;
+} 
+  
+
+}  
+ 
+
+@media only screen and (min-width: 700px) and (orientation: landscape) 
+{
+  .history {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
