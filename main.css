@@ -11,10 +11,10 @@
 }
 
 /* Black Background on selected flex boxes */
-/* .square1 {
+.square1 {
   background-color: black;
   color: white;
-} */
+}
 
 h3 {
   text-align: center;
@@ -22,21 +22,23 @@ h3 {
 
 /* Media Layouts */
 
-@media only screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait) 
+@media only screen and (min-width: 0px) and (max-width: 450px) and (orientation: portrait) 
 {
   #container { 
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   } 
+
 } 
 
-
-@media only screen and (min-width: 600px) and (max-width: 900px) and (orientation: portrait)
+@media only screen and (min-width: 450px) and (max-width: 900px) and (orientation: portrait)
 {
   #container {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
+    
 } 
+
 } 
  
 
