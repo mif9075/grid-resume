@@ -36,7 +36,11 @@ h3 {
   #container {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
-    
+    grid-template-areas: 
+    "bio about_me contact_me social"
+    "columbia north_shore us_army"
+    "dfa cincinnati language"
+    "software_skills interest"
 } 
 
 } 
