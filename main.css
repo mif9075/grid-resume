@@ -1,3 +1,16 @@
+#bio {grid-area: bio1;}
+#about_me {grid-area: about_me1}
+#contact_me {grid-area: contact_me1} 
+#social {grid-area: social1}
+#columbia {grid-area: columbia1} 
+#north_shore {grid-area: north_shore1} 
+#us_army {grid-area: us_army1}
+#dfa {grid-area: dfa1}
+#cincinnati {grid-area: cincinnati1}
+#language {grid-area: language1}
+#software_skills {grid-area: software_skills1}
+#interest {grid-area: interest1}
+
 /* 12 flex boxes 3x4*/
 .square {
   border: 1px solid black;
@@ -27,8 +40,20 @@ h3 {
   #container { 
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-template-areas: 
+    "bio1" 
+    "about_me1" 
+    "contact_me1" 
+    "social1"
+    "columbia1" 
+    "north_shore1"
+    "us_army1" 
+    "dfa1"
+    "cincinnati1" 
+    "language1" 
+    "software_skills1" 
+    "interest_1"
   } 
-
 } 
 
 @media only screen and (min-width: 450px) and (max-width: 900px) and (orientation: portrait)
@@ -37,20 +62,25 @@ h3 {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
     grid-template-areas: 
-    "bio about_me contact_me social"
-    "columbia north_shore us_army"
-    "dfa cincinnati language"
-    "software_skills interest"
+        "bio1 columbia1"
+        "about_me1 north_shore1"
+        "contact_me1 us_army1"
+        "social1 dfa1"
+        "software_skills1"
+        "interest_1 language1"
 } 
+}
 
-} 
- 
-
-@media only screen and (min-width: 1000px) and (orientation: landscape) 
+@media only screen and (min-width: 900px) and (orientation: landscape) 
   {
     #container {
       grid-template-columns: 1fr 1fr 1fr; 
       grid-template-rows: auto;
+        grid-template-areas: 
+        "bio1 columbia1 dfa1"
+        "about_me1 north_shore1 cincinnati1"
+        "contact_me1 us_army1 language1"
+        "social1 software_skills1 interest_1"
   } 
   }  
 
