@@ -11,15 +11,12 @@
 #software_skills {grid-area: software_skills1}
 #interest {grid-area: interest1}
 
-
-
-
 /* 12 flex boxes 3x4*/
 .square {
   border: 1px solid black;
 }
 
-/* Container of all 12 grid boxes */
+/* Default for Sizes 450px to 650px */
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -45,6 +42,7 @@ h3 {
 
 /* Media Layouts */
 
+/* For Cell Phones */
 @media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) 
 {
   #container { 
@@ -66,6 +64,7 @@ h3 {
   } 
 } 
 
+/* For Tablets in Landscape Mode/Desktops */
 @media only screen and (min-width: 650px) and (orientation: landscape) 
   {
     #container {
@@ -76,7 +75,7 @@ h3 {
         "about_me1 north_shore1 cincinnati1"
         "contact_me1 us_army1 language1"
         "social1 software_skills1 interest1"
-  } 
+    } 
   }  
 
 
