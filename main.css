@@ -13,7 +13,9 @@
 
 /* 12 flex boxes 3x4*/
 .square {
-  border: 1px solid gray;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
 }
 
 /* Default for Sizes 450px to 650px */
@@ -34,10 +36,12 @@
 .square1 {
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 h3 {
   text-align: center;
+  color: black;
 }
 
 h4 {
