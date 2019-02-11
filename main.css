@@ -30,13 +30,17 @@
       "interest1 language1"
 }
 
-/* Blue Background on selected flex boxes */
+/* Black Background on selected flex boxes */
 .square1 {
-  background-color: blue;
+  background-color: black;
   color: white;
 }
 
 h3 {
+  text-align: center;
+}
+
+h4 {
   text-align: center;
 }
 
