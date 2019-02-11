@@ -1,4 +1,4 @@
-#bio {grid-area: bio1;}
+#bio {grid-area: bio1}
 #about_me {grid-area: about_me1}
 #contact_me {grid-area: contact_me1} 
 #social {grid-area: social1}
@@ -11,6 +11,9 @@
 #software_skills {grid-area: software_skills1}
 #interest {grid-area: interest1}
 
+
+
+
 /* 12 flex boxes 3x4*/
 .square {
   border: 1px solid black;
@@ -19,8 +22,15 @@
 /* Container of all 12 grid boxes */
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr; 
   grid-template-rows: auto;
+  grid-template-areas: 
+      "bio1 columbia1"
+      "about_me1 north_shore1"
+      "contact_me1 us_army1"
+      "social1 dfa1"
+      "software_skills1 cincinnati"
+      "interest1 language1"
 }
 
 /* Black Background on selected flex boxes */
@@ -35,7 +45,7 @@ h3 {
 
 /* Media Layouts */
 
-@media only screen and (min-width: 0px) and (max-width: 450px) and (orientation: portrait) 
+@media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) 
 {
   #container { 
     grid-template-columns: 1fr;
@@ -52,26 +62,11 @@ h3 {
     "cincinnati1" 
     "language1" 
     "software_skills1" 
-    "interest_1"
+    "interest1"
   } 
 } 
 
-@media only screen and (min-width: 450px) and (max-width: 900px) and (orientation: portrait)
-{
-  #container {
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "bio1 columbia1"
-        "about_me1 north_shore1"
-        "contact_me1 us_army1"
-        "social1 dfa1"
-        "software_skills1"
-        "interest_1 language1"
-} 
-}
-
-@media only screen and (min-width: 900px) and (orientation: landscape) 
+@media only screen and (min-width: 650px) and (orientation: landscape) 
   {
     #container {
       grid-template-columns: 1fr 1fr 1fr; 
@@ -80,7 +75,7 @@ h3 {
         "bio1 columbia1 dfa1"
         "about_me1 north_shore1 cincinnati1"
         "contact_me1 us_army1 language1"
-        "social1 software_skills1 interest_1"
+        "social1 software_skills1 interest1"
   } 
   }  
 
