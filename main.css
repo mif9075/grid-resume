@@ -78,8 +78,14 @@ h3 {
     } 
   }  
 
+  /* Image inside bio */
+#bio img{
+  width: 25%;
+}
 
-
+.square img{
+  width: 15%;
+}
 
 
 
