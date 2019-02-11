@@ -48,9 +48,23 @@ h4 {
   text-align: center;
 }
 
+ /* Image inside bio */
+ #bio img{
+  width: 25%;
+}
+
+.square img{
+  width: 15%;
+}
+
+#interest img{
+  width: 5%;
+}
+
+
 /* Media Layouts */
 
-/* For Cell Phones */
+/* For Cell Phones Portrait Mode*/
 @media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) 
 {
   #container { 
@@ -72,6 +86,22 @@ h4 {
   } 
 } 
 
+/* Cell Phones in Landscape Mode */
+@media only screen and (min-width: 0px) and (max-width: 500px) and (orientation: landscape) 
+{
+  #container { 
+    grid-template-columns: 2fr;
+    grid-template-rows: auto; 
+    grid-template-areas: 
+      "bio1 columbia1"
+      "about_me1 north_shore1"
+      "contact_me1 us_army1"
+      "social1 dfa1"
+      "software_skills1 cincinnati1"
+      "interest1 language1"
+  } 
+}
+
 /* For Tablets in Landscape Mode/Desktops */
 @media only screen and (min-width: 650px) and (orientation: landscape) 
   {
@@ -86,18 +116,7 @@ h4 {
     } 
   }  
 
-  /* Image inside bio */
-#bio img{
-  width: 25%;
-}
-
-.square img{
-  width: 15%;
-}
-
-#interest img{
-  width: 5%;
-}
+ 
 
 
 
